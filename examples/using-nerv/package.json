@@ -8,8 +8,9 @@
   },
   "dependencies": {
     "module-alias": "^2.0.0",
+    "nerv-server": "^1.2.11",
+    "nervjs": "^1.2.11",
     "next": "latest",
-    "nervjs": "^1.2.4",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },

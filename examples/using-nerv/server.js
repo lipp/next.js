@@ -7,6 +7,7 @@ const moduleAlias = require('module-alias')
 if (!dev) {
   moduleAlias.addAlias('react', 'nervjs')
   moduleAlias.addAlias('react-dom', 'nervjs')
+  moduleAlias.addAlias('react-dom/server', 'nerv-server')
 }
 
 const { createServer } = require('http')

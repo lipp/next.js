@@ -8,7 +8,8 @@ module.exports = {
 
     config.resolve.alias = {
       react: 'nervjs',
-      'react-dom': 'nervjs'
+      'react-dom': 'nervjs',
+      'react-dom/server': 'nerv-server'
     }
 
     return config
