@@ -16,13 +16,13 @@ export function loadEnvConfig(dir: string, dev?: boolean): Env | false {
   const isTest = process.env.NODE_ENV === 'test'
   const mode = isTest ? 'test' : dev ? 'development' : 'production'
   const dotenvFiles = [
-    `.env.${mode}.local`,
-    `.env.${mode}`,
+    '.env',
     // Don't include `.env.local` for `test` environment
     // since normally you expect tests to produce the same
     // results for everyone
     mode !== 'test' && `.env.local`,
-    '.env',
+    `.env.${mode}`,
+    `.env.${mode}.local`,
   ].filter(Boolean) as string[]
 
   combinedEnv = {
